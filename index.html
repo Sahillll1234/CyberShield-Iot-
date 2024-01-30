@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<bgcolor="yellow">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sensor Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="loginPage" class="page">
+
+            <h2>Login</h2>
+
+            <form id="loginForm">
+
+                <label for="username">Username:</label>
+
+                <input type="text" id="username" required>
+
+                <label for="password">Password:</label>
+
+                <input type="password" id="password" required>
+
+                <button type="button" onclick="login()">Login</button>
+
+            </form>
+
+            <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+
+        </div>
+
+
+
+        <div id="signupPage" class="page">
+
+            <h2>Sign Up</h2>
+
+            <form id="signupForm">
+
+                <label for="newUsername">Username:</label>
+
+                <input type="text" id="newUsername" required>
+
+                <label for="newPassword">Password:</label>
+
+                <input type="password" id="newPassword" required>
+
+                <button type="button" onclick="signUp()">Sign Up</button>
+
+            </form>
+
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+
+        </div>
+
+
+
+        <div id="dashboardPage" class="page">
+
+            <h2>Sensor Details</h2>
+
+            <div id="sensorDetails"></div>
+
+            <button onclick="logout()">Logout</button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
